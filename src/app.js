@@ -6,8 +6,6 @@ var simbolo = ["♦", "♥", " ♠", "♣"];
 var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 var arrayOriginal = [];
 
-//Dibujo la carta, agrego divs y clases
-
 function dibujarCarta(simbolo, number) {
   let card = document.createElement("div");
   card.classList.add("card");
@@ -41,15 +39,13 @@ function dibujarCarta(simbolo, number) {
     simbolosup.style.color = "red";
     simboloinf.style.color = "red";
   }
-  //Agrego a elemento card
+
   card.appendChild(simbolosup);
   card.appendChild(numero);
   card.appendChild(simboloinf);
 
   return card;
 }
-
-//Botón para dibujar cartas según input
 
 var draw = document.querySelector("#draw");
 draw.addEventListener("click", function(e) {
@@ -74,8 +70,6 @@ draw.addEventListener("click", function(e) {
   console.log(arrayOriginal);
 });
 
-//Botón sort para ordenar por método
-
 var sort = document.querySelector("#sort");
 sort.addEventListener("click", function(e) {
   e.preventDefault();
@@ -89,13 +83,11 @@ sort.addEventListener("click", function(e) {
   }
 });
 
-//Método Sort
 const bubbleSort = arr => {
-  let wall = arr.length - 1; //we start the wall at the end of the array
+  let wall = arr.length - 1;
   while (wall > 0) {
     let index = 0;
     while (index < wall) {
-      //compare the adjacent positions, if the right one is bigger, we have to swap
       if (arr[index][0] > arr[index + 1][0]) {
         let aux = arr[index];
         arr[index] = arr[index + 1];
@@ -103,12 +95,10 @@ const bubbleSort = arr => {
       }
       index++;
     }
-    wall--; //decrease the wall for optimization
+    wall--;
   }
   return arr;
 };
-
-//Botón select para ordenar por método select
 
 var select = document.querySelector("#select");
 select.addEventListener("click", function(e) {
@@ -123,11 +113,9 @@ select.addEventListener("click", function(e) {
   }
 });
 
-//Método Select
-
 const selectSort = arr => {
   let min = 0;
-  /* Ordenamos los numeros */
+
   while (min < arr.length) {
     for (let i = min + 1; i < arr.length; i++) {
       if (arr[min[0]] > arr[i[0]]) {

@@ -1,1 +1,88 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#body {
+  background-color: #063005;
+  opacity: 1;
+  background-image: radial-gradient(#244819 0.75px, transparent 0.75px),
+    radial-gradient(#244819 0.75px, #063005 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.row {
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.btn {
+  background: rgb(112, 0, 25);
+  background: linear-gradient(
+    298deg,
+    rgba(112, 0, 25, 1) 0%,
+    rgba(200, 23, 23, 1) 75%
+  );
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.form-control {
+  font-weight: bold;
+}
+
+.container {
+  background-color: white;
+  border-style: ridge;
+  border-radius: 25px;
+  width: 15%;
+  height: 310px;
+  margin-top: 15px;
+  margin-bottom: 3%;
+}
+
+h1 {
+  border: 2px solid white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  background-image: url(https://i.pinimg.com/564x/9f/a4/26/9fa4264e5e6ec7ffa7c38874b8d679d8.jpg);
+}
+
+.vegas_gif {
+  display: flex;
+  width: 280px;
+  height: 260px;
+  margin-left: 32%;
+}
+
+.card {
+  width: 130px;
+  height: 190px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.number {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 26px;
+  font-family: "Lobster Two", cursive;
+}
+
+.simbolo {
+  font-size: 40px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.simboloinf {
+  transform: rotate(180deg);
+  position: relative;
+  font-size: 40px;
+  float: inline-end;
+  height: 30px;
+  top: 50px;
+}

@@ -3,27 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Sorting Cards Guille</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://fonts.googleapis.com/css?family=Lobster Two"
+      src="https://kit.fontawesome.com/598f5bedd6.js"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+
+  <body id="body">
+    <div class="row">
+      <div class="col-6">
+        <div class="input-group">
+          <input
+            type="number"
+            class="form-control"
+            id="input"
+            placeholder="Crear cartas"
+            aria-label="Recipient's username with two button addons"
+            aria-describedby="button-addon4"
+          />
+          <div class="input-group-append" id="button-addon4">
+            <button class="btn btn-outline-secondary" type="button" id="draw">
+              Crear
+            </button>
+            <button class="btn btn-outline-secondary" type="button" id="sort">
+              Sortear Bubble
+            </button>
+            <button class="btn btn-outline-secondary" type="button" id="select">
+              Sortear Select
+            </button>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <h1>Random Cards</h1>
+    <div
+      class="w-100 d-flex justify-content-around"
+      id="cartasAleatorias"
+    ></div>
+
+    <h1>Bubble sort</h1>
+    <div class="w-100 d-flex justify-content-around" id="cartasOrdenadas"></div>
+
+    <h1>Select sort</h1>
+    <div class="w-100 d-flex justify-content-around" id="metodoSelect"></div>
+
+    <div class="vegas_gif">
+      <img
+        src="https://lh3.googleusercontent.com/proxy/qR62LoARP6PTmfshCaP1bedZweF7tJ8ckpesZkiRuXlgnJXhSufhh36lT8JYTREKXopdkgPg1D6aCyLUabp9f4vskg"
+        alt=""
+      />
     </div>
   </body>
 </html>
